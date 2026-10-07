@@ -10,7 +10,8 @@ This repository documents the entire enterprise analytics lifecycle—from relat
 
 Below is the primary **Executive Overview** dashboard summarizing core enterprise financial KPIs, sales trajectories, and regional revenue shares:
 
-![Executive Overview Dashboard](images/executive_overview.png)
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4b158b17-3092-490d-b389-ecb7d1065d07" />
+
 
 ---
 
@@ -38,20 +39,20 @@ Below is the primary **Executive Overview** dashboard summarizing core enterpris
 [7-Page Power BI Executive Dashboard]
 ```
 
-📌 Complete Project Lifecycle Breakdown
-1. Data Architecture & Relational Modeling
+##📌 Complete Project Lifecycle Breakdown
+##1. Data Architecture & Relational Modeling
 Data Scale: 1M+ rows across 12 normalized relational entities designed in a star/snowflake schema.
 
 Core Entities: Fact_Sales, Dim_Customer, Dim_Product, Dim_Store, Dim_Category, Dim_Date, Dim_Payment, Dim_Supplier, Dim_Geography, Dim_Shipping, Dim_Order, and Dim_Promotion.
 
 Referential Integrity: Mapped Primary Keys (PK) and Foreign Keys (FK) using Draw.io to prevent orphan records during transactional aggregation.
 
-2. ETL Pipelines & SQL Optimization
+##2. ETL Pipelines & SQL Optimization
 SQL Querying: Standardized relational join strategies, group-by aggregations, and window functions to query revenue and inventory trends across database nodes.
 
 Python ETL (pandas, NumPy, openpyxl): Automated data cleansing pipelines, missing value imputation, transaction formatting, and pre-visualization anomaly detection.
 
-3. Power BI Modeling & DAX Metric Engine
+##3. Power BI Modeling & DAX Metric Engine
 Power Query (M-Code): Transformed raw database schemas, standardized data types, and generated a custom 5-year calendar dimension table.
 
 Key Calculated DAX Measures:
@@ -66,12 +67,12 @@ Average Order Value (AOV): DIVIDE([Total Revenue], [Total Orders], 0) ($12.76K)
 
 Customer Purchase Frequency: DIVIDE([Total Orders], [Total Customers], 0) (6.00)
 
-4. Software Quality Assurance (SQA) & Data Auditing
+##4. Software Quality Assurance (SQA) & Data Auditing
 Validation Scripts: Built custom Python verification scripts to cross-check Power BI measure aggregates against raw SQLite query totals.
 
 Dashboard Testing: Performed filter-context sanity checks, dynamic slicer responsiveness testing, and spatial UI validation across all report pages.
 
-5. Multi-Page Power BI Analytics Breakdown
+##5. Multi-Page Power BI Analytics Breakdown
 The Power BI report workbook features 7 specialized analytical pages:
 
 Executive Overview (Page 1): Strategic cockpit tracking $4B Revenue, $1.15B Profit, 300K Orders, regional market shares (Mumbai leading at 31.09%), and 5-year revenue trends.
@@ -88,7 +89,7 @@ Logistics & Order Fulfillment (Page 6): Supply chain monitoring evaluating 300K 
 
 Supplier & Category Analytics (Page 7): Vendor management evaluating 200 suppliers ($19.14M avg revenue/vendor), 30 product categories, procurement lead times, and category return distribution.
 
-📈 Key Enterprise Impact & Performance Metrics
+##📈 Key Enterprise Impact & Performance Metrics
 Total Enterprise Revenue: $4.00 Billion
 
 Total Net Profit: $1.15 Billion (Consistent 30% Profit Margin)
@@ -101,7 +102,7 @@ Inventory Units Sold: 2.0 Million Physical Units
 
 Retail Outlet Footprint: 100 Physical Stores across 4 major Indian metros (Mumbai, Pune, Delhi, Bangalore)
 
-🛠️ Complete Technology Stack
+##🛠️ Complete Technology Stack
 Database & Querying: PostgreSQL, SQLite, Draw.io (Data Architecture & Schema Design)
 
 Data Engineering & ETL: Python (pandas, NumPy, openpyxl, Matplotlib, Seaborn)
