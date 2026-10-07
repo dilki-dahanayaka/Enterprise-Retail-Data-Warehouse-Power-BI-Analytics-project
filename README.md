@@ -111,6 +111,7 @@ Business Intelligence: Microsoft Power BI Desktop, Power Query (M-Code), DAX
 Quality Assurance: Data Verification Scripts, Boundary Condition & Defect Testing
 
 📂 Project Repository Structure
+```text
 ├── README.md
 ├── docs/
 │   ├── Architecture_ERD_Diagram.png
@@ -121,3 +122,4 @@ Quality Assurance: Data Verification Scripts, Boundary Condition & Defect Testin
 ├── Retail_Enterprise_Analytics.pbix
 └── images/
     └── executive_overview.png
+```
